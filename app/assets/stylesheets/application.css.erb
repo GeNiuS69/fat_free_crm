@@ -26,7 +26,7 @@
  *= require_self
  */
 
-<%
+<%=
 Gem.loaded_specs.keys.grep(/^ffcrm_/).each do |plugin|
   require_asset(plugin) rescue Sprockets::FileNotFound
 end
